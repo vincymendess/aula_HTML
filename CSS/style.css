@@ -35,8 +35,8 @@ ul li {
 
 /* Padronização de imagens */
 img {
-  width: 250px;/* largura da imagem */
-  height: auto;/* altura da imagem */
+  width: auto;/* largura da imagem */
+  height: 250px;/* altura da imagem */
   margin: 10px; /* espaçamento externo */
   border-radius: 5px; /* arredondamento da borda */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* sombra */
