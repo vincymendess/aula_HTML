@@ -33,7 +33,74 @@ ul li {
   margin-bottom: 4px;
 }
 
+/* Padronização de imagens */
 img {
-  width: 250px;
-  height: auto;
+  width: 250px;/* largura da imagem */
+  height: auto;/* altura da imagem */
+  margin: 10px; /* espaçamento externo */
+  border-radius: 5px; /* arredondamento da borda */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* sombra */
+}
+
+/* Padronização de textos */
+.texto {
+  font-size: 16px; /* tamanho da fonte */
+  line-height: 1.5; /* altura da linha */
+  margin-bottom: 10px; /* espaçamento externo inferior */
+}
+
+/*ESTILIZAÇÃO DA LISTA*/
+
+.lista {
+  list-style: none; /* estilo da lista */
+  padding: 0; /* espaçamento interno */
+  margin: 0; /* espaçamento externo */
+}
+
+.lista li {
+  padding: 10px; /* espaçamento interno para cada item */
+  border-bottom: 1px solid #ccc; /* borda inferior para cada item */
+}
+
+.lista li:last-child {
+  border-bottom: none; /* remove a borda inferior do último item */
+}
+
+.lista li:hover {
+  background-color: #f0f0f0; /* cor de fundo ao passar o mouse */
+}
+
+/*ESTILIZAÇÃO DO BOTÃO*/
+
+.botao {
+  background-color: #4CAF50; /* cor de fundo */
+  color: #fff; /* cor do texto */
+  padding: 10px 20px; /* espaçamento interno */
+  border: none; /* borda */
+  border-radius: 5px; /* arredondamento da borda */
+  cursor: pointer; /* cursor */
+}
+
+.botao:hover {
+  background-color: #3e8e41; /* cor de fundo ao passar o mouse */
+}
+
+.botao:active {
+  background-color: #2f6f31; /* cor de fundo ao clicar */
+}
+
+.botao[tipo="primario"] {
+  background-color: #4CAF50; /* cor de fundo para botão primário */
+}
+
+.botao[tipo="secundario"] {
+  background-color: #ccc; /* cor de fundo para botão secundário */
+}
+
+.botao[tipo="sucesso"] {
+  background-color: #2ecc71; /* cor de fundo para botão de sucesso */
+}
+
+.botao[tipo="erro"] {
+  background-color: #e74c3c; /* cor de fundo para botão de erro */
 }
