@@ -1,20 +1,16 @@
-body {
-    background-color: #f0f0f0;
-  }
 
-  ul {
-    list-style: none;
-    padding: 51px;
-    
-  }
+  /* Estilo da galeria */
+ul {
+  list-style: none;
+}
+ul li {
+  text-align: center;
+  background-color: aliceblue;
+  padding: 4px;
+  margin: 4px;
+}
 
-  li {
-    text-align: center;
-    color: blue;
-    background-color: greenyellow;
-  }
-
-  img {
-    width: 250px;
-    height: 250px;
-  }
+img {
+  width: 250px;
+  height: 250px;
+}´
