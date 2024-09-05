@@ -1,28 +1,8 @@
 h1 {
-  color: red;
-  font-size: 24px;
-  text-align: center;
-} /* fim h1 */
-
-ul {
-  list-style: none; /* remove marcador */
-  border: 4px solid; /* cria uma borda solida */
-  border-color: gray; /* cor da borda */
-  background-color: lightgrey; /* plano de fundo */
-  padding: 4px; /* margem interna */
-} /* fim ul */
-ul li {
-  background-color: yellow;
-}
-/* Estilo da galeria */
-ul {
-  list-style: none;
-}
-ul li {
-  text-align: center;
-  background-color: aliceblue;
-  padding: 4px;
-  margin: 4px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 22pt;
+  color: midnightblue;
+  margin-bottom: 4px;
 }
 
 .titulo {
@@ -49,58 +29,86 @@ img {
   margin-bottom: 10px; /* espaçamento externo inferior */
 }
 
-/*ESTILIZAÇÃO DA LISTA*/
 
-.lista {
-  list-style: none; /* estilo da lista */
-  padding: 0; /* espaçamento interno */
-  margin: 0; /* espaçamento externo */
+
+ /* ----------- ESTILIZAÇÃO DO FORMULÁRIO ----------*/
+ form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+input[type=text],[type=email],[type=submit]{
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
 }
 
-.lista li {
-  padding: 10px; /* espaçamento interno para cada item */
-  border-bottom: 1px solid #ccc; /* borda inferior para cada item */
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  resize: none;
 }
 
-.lista li:last-child {
-  border-bottom: none; /* remove a borda inferior do último item */
+
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
 }
 
-.lista li:hover {
-  background-color: #f0f0f0; /* cor de fundo ao passar o mouse */
+.checkbox{
+  font-family: sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 12pt;
+  color: midnightblue;
+  margin-bottom: 4px;
 }
 
-/*ESTILIZAÇÃO DO BOTÃO*/
-
-.botao {
-  background-color: #4CAF50; /* cor de fundo */
-  color: #fff; /* cor do texto */
-  padding: 10px 20px; /* espaçamento interno */
-  border: none; /* borda */
-  border-radius: 5px; /* arredondamento da borda */
-  cursor: pointer; /* cursor */
+.enviarform{
+  margin-top: 25px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px auto;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+.enviarform:hover {
+  background-color: #3e8e41;
 }
 
-.botao:hover {
-  background-color: #3e8e41; /* cor de fundo ao passar o mouse */
+
+
+/* ----------- ESTILIZAÇÃO DO cARDÁPIO ----------*/
+
+table {
+	border-collapse: collapse;
 }
 
-.botao:active {
-  background-color: #2f6f31; /* cor de fundo ao clicar */
+th, td {
+	border: 1px solid #ddd;
+	padding: 50px;
+	text-align: left;
 }
 
-.botao[tipo="primario"] {
-  background-color: #4CAF50; /* cor de fundo para botão primário */
+th {
+	background-color: #f0f0f0;
 }
 
-.botao[tipo="secundario"] {
-  background-color: #ccc; /* cor de fundo para botão secundário */
-}
-
-.botao[tipo="sucesso"] {
-  background-color: #2ecc71; /* cor de fundo para botão de sucesso */
-}
-
-.botao[tipo="erro"] {
-  background-color: #e74c3c; /* cor de fundo para botão de erro */
+td img {
+	width: 300px;
+	height: auto;
 }
